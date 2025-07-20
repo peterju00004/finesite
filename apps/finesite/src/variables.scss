@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+$color-text-primary: rgb(46, 44, 32);
+
+@font-face {
+    font-family: 'handwriting';
+    font-stretch: expanded;
+    src: url("@/assets/handwriting.ttf");
+}
+
+$font-handwriting: 'handwriting';
+$font-merriweather: 'Merriweather', serif;
+
+$font-handwriting-regular: normal 5rem $font-handwriting;
+$font-handwriting-small: normal 1.8rem $font-handwriting;
+$font-merriweather-light: normal 300 $font-merriweather;
+$font-merriweather-regular: normal 400 $font-merriweather;
+$font-merriweather-bold: normal 700 $font-merriweather;
+$font-merriweather-black: normal 900 $font-merriweather;
+$font-merriweather-light-italic: italic 300 $font-merriweather;
+$font-merriweather-regular-italic: italic 400 $font-merriweather;
+$font-merriweather-bold-italic: italic 700 $font-merriweather;
+$font-merriweather-black-italic: italic 900 $font-merriweather;
