@@ -1,0 +1,12 @@
+@use '../../variables.scss' as vars;
+
+.shifting-text {
+    overflow: hidden;
+    width: 100%;
+
+    .shifting-text-row {
+        display: inline-block;
+        white-space: nowrap;
+        font: vars.$font-handwriting-small;
+    }
+}
