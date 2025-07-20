@@ -1,0 +1,40 @@
+@use '../../variables.scss' as vars;
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 20%;
+
+    .column-nav {
+        margin-right: 0;
+    }
+
+    .column-list {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        &-no-decoration {
+            text-decoration: none;
+            list-style: none;
+            color: vars.$color-text-primary;
+        }
+
+        .column-item {
+            margin-left: 0;
+            padding-left: 0;
+            padding-top: 1rem;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            .column-link {
+                text-decoration: none;
+                font-weight: bold;
+                color: vars.$color-text-primary;
+            }
+        }
+    }
+}
