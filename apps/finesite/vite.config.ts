@@ -1,5 +1,6 @@
 /// <reference types='vitest' />
 import { defineConfig } from 'vite';
+import * as path from 'path';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig(() => ({
@@ -26,4 +27,9 @@ export default defineConfig(() => ({
       transformMixedEsModules: true,
     },
   },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    }
+  }
 }));
