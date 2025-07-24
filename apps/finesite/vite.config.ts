@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(() => ({
   root: __dirname,
+  base: '/finesite/',
   cacheDir: '../../node_modules/.vite/apps/finesite',
   server:{
     port: 4200,
