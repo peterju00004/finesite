@@ -1,0 +1,21 @@
+.projects {
+    .projects-title {
+        font-family: vars.$font-merriweather;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .projects-subsection {
+        margin-bottom: 5rem;
+    }
+
+    .projects-subsection-title {
+        font-family: vars.$font-handwriting;
+        font-size: 1.8rem;
+    }
+}
+
+.handwriting {
+    font-family: vars.$font-handwriting;
+    font-size: 1.5rem;
+}

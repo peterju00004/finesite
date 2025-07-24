@@ -4,6 +4,7 @@ import styles from './column.module.scss';
 interface ColumnItemProps {
   slot?: string;
   className?: string;
+  to?: string;
 }
 
 export function Column(props: React.PropsWithChildren<{}>) {

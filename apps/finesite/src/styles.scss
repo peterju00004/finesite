@@ -1,9 +1,8 @@
-@use './variables.scss' as vars;
-
 * {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    color: vars.$color-black;
 }
 
 html {
@@ -13,4 +12,39 @@ html {
 
 body {
     background-color: vars.$color-green;
+    font-family: vars.$font-merriweather;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+    font-size: medium;
+}
+
+img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
