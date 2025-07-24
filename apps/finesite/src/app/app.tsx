@@ -8,6 +8,7 @@ import CodingProjects from '../pages/projects-page/coding-projects/coding-projec
 import DigitalNarrative from '../pages/projects-page/digital-narrative/digital-narrative';
 import OtherProjects from '../pages/projects-page/other-projects/other-projects';
 import Disco from '../pages/projects-page/digital-narrative/disco/disco';
+import ContactPage from '../pages/contact-page/contact-page';
 
 import { Link, Route, Routes } from 'react-router-dom';
 
@@ -32,6 +33,7 @@ export function App() {
               <Route path="/projects/audio-design" element={<AudioDesign />} />
               <Route path="/projects/other" element={<OtherProjects />} />
               <Route path="/projects/digital-narrative/disco" element={<Disco />} />
+              <Route path="/contact" element={<ContactPage />} />
             </Routes>
           </div>
         </div>
