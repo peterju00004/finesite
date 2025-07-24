@@ -21,7 +21,6 @@ export function App() {
           <Column>
             <Link slot="item" to="/">about</Link>
             <Link slot="item" to="/projects">projects</Link>
-            <Link slot="item" to="/in-between">in between</Link>
             <Link slot='item' to="/contact">contact</Link>
           </Column>
           <div style={{ margin: 'none 1rem', padding: '1rem', width: '80%' }}>
