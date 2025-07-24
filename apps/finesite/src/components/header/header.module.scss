@@ -1,7 +1,5 @@
-@use '../../variables.scss' as vars;
-
 .header {
-    font: vars.$font-merriweather-regular;
+    font-family: vars.$font-merriweather;
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
@@ -17,5 +15,5 @@
 }
 
 .handwriting {
-    font: vars.$font-handwriting-regular;
+    font-family: vars.$font-handwriting;
 }

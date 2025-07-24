@@ -31,5 +31,13 @@ export default defineConfig(() => ({
     alias: {
       '@': path.resolve(__dirname, './src'),
     }
+  },
+  assetsInclude: ['**/*.mp4'],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@use "@/styles/_variables.scss" as vars;',
+      }
+    }
   }
 }));
