@@ -10,9 +10,11 @@ import OtherProjects from '../pages/projects-page/other-projects/other-projects'
 import Disco from '../pages/projects-page/digital-narrative/disco/disco';
 import ContactPage from '../pages/contact-page/contact-page';
 
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link, Route, Routes, useLocation } from 'react-router-dom';
 
 export function App() {
+  const location = useLocation();
+  console.log('Current location:', location.pathname);
   return (
     <div>
       <div className={styles.app}>
