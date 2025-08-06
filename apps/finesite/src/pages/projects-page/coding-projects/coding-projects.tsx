@@ -53,7 +53,7 @@ export function CodingProjects() {
           <br /><br />
           This website is a monorepo collection of React applications managed by Nx. It is deployed to a bought domain of mine, which allows me to learn this process and related concepts like DNS management. If you want to visit the code for my website, you can go ahead to:
           <br /><br />
-          <a href="https://github.com/peterju00004/finesite.org">https://github.com/peterju00004/finesite.org</a>
+          <a href="https://github.com/peterju00004/finesite">https://github.com/peterju00004/finesite</a>
         </p>
       </div>
 
