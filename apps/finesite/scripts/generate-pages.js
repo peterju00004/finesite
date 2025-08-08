@@ -1,8 +1,5 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const fs = require('fs');
+const path = require('path');
 
 const routes = [
   'projects',
@@ -13,11 +10,14 @@ const routes = [
   'contact'
 ];
 
-const indexHtml = fs.readFileSync(path.join(__dirname, '../dist/index.html'), 'utf8');
+const distPath = path.join(__dirname, '../dist');
+const indexHtml = fs.readFileSync(path.join(distPath, 'index.html'), 'utf8');
 
 routes.forEach(route => {
-  const routePath = path.join(__dirname, '../dist', route);
+  const routePath = path.join(distPath, route);
   fs.mkdirSync(routePath, { recursive: true });
   fs.writeFileSync(path.join(routePath, 'index.html'), indexHtml);
   console.log(`Created: ${route}/index.html`);
 });
+
+console.log(' All route pages generated successfully!');
