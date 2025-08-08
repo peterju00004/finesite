@@ -1,5 +1,10 @@
 {
   "name": "@finesite/finesite",
   "version": "0.0.1",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "vite build && node scripts/generate-pages.js",
+    "dev": "vite serve",
+    "preview": "vite preview"
+  }
 }
