@@ -14,6 +14,14 @@ export function DigitalNarrative() {
           <Link to="/projects/digital-narrative/disco/">Read the full digital narrative here</Link>
         </p>
       </div>
+      <div slot="subsection">
+        <span slot='title'>Armada Experience</span>
+        <p>
+          During the summer of 2025, I had the opportunity to work as a React JavaScript UI Developer intern at Armada Supply Chain Solutions where I contributed to the development of reimagining their enterprise-level web applictaion, 24tracc.
+          <br /><br />
+          <Link to="/projects/digital-narrative/armada">Read the full digital narrative here</Link>
+        </p>
+      </div>
     </ProjectDisplay>
   );
 }
