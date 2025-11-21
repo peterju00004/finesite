@@ -33,7 +33,7 @@ export function App() {
         <Header />
         <div style={{ display: 'flex' }}>
           <Column>
-            <Link slot="item" to="/">about</Link>
+            <Link slot="item" to="/">home</Link>
             <Link slot="item" to="/projects">projects</Link>
             <Link slot='item' to="/contact">contact</Link>
           </Column>
