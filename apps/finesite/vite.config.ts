@@ -20,6 +20,7 @@ export default defineConfig(() => ({
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
   // },
+  publicDir: 'public',
   build: {
     outDir: './dist',
     emptyOutDir: true,

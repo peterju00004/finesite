@@ -14,6 +14,18 @@ export function DigitalNarrative() {
           <Link to="/projects/digital-narrative/disco/">Read the full digital narrative here</Link>
         </p>
       </div>
+      <div slot='subsection'>
+        <span slot='title'>OneStopMoments</span>
+          <p>
+            onestopmoments is a digital narrative I made. As a static site, it demonstrates how interactivity can play a part in the narration and the story. Most information reveals only parts of the story as the user chooses their way through the story by clicking on channels. Some information are carefully hidden that requires the user to figure out where they are located, providing additional complementary details.
+            <br /><br />
+            Based on a true story, onestopmoments talks about how a Discord-esque server was created for a group of friends to chill and chat and how it gradually dies over time, as (some) people step into different stages of their life (while the others don't). It essentially talks about how relationships and distances between people can change over time.
+            <br /><br />
+            This project can be found here:
+            <br /><br />
+            <a href="/onestopmoments/welcome/">onestopmoments</a>
+          </p>
+      </div>
       <div slot="subsection">
         <span slot='title'>Armada Experience</span>
         <p>

@@ -16,6 +16,16 @@ import { Link, Route, Routes, useLocation } from 'react-router-dom';
 export function App() {
   const location = useLocation();
   console.log('Current location:', location.pathname);
+  
+  // Check if we're on the onestopmoments route or any of its sub-routes
+  const isOnestopmoments = location.pathname.startsWith('/onestopmoments');
+  
+  // If on onestopmoments, redirect to the actual static HTML
+  if (isOnestopmoments) {
+    window.location.href = '/onestopmoments/welcome/index.html';
+    return null;
+  }
+  
   return (
     <div>
       <div className={styles.app}>
