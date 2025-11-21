@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import styles from './digital-narrative.module.scss';
 import ProjectDisplay from '../../../components/project-display/project-display';
@@ -6,6 +5,14 @@ import ProjectDisplay from '../../../components/project-display/project-display'
 export function DigitalNarrative() {
   return (
     <ProjectDisplay title="Digital Narrative Projects">
+      <div slot='subsection'>
+        <span slot='title'>Planets that Revolve around the Ruby Moon</span>
+        <p>
+          <i>Planets that Revolve around the Ruby Moon</i> is a short story collection of four imaginatary planets. Each planet has its own unique characteristics and its soundtrack (composed and produced by me). This multimedia project combines written narratives with audio elements (as well as a pixel art I drew) to create an immersive and fun experience for readers.
+          <br /><br />
+          <Link to="/projects/digital-narrative/planets">Read the full digital narrative here</Link>
+        </p>
+      </div>
       <div slot="subsection">
         <span slot='title'>DISCO Experience</span>
         <p>
