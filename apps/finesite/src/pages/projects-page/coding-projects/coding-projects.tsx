@@ -1,4 +1,5 @@
 import styles from './coding-projects.module.scss';
+import theGoldenTicketImg from '@/assets/projects/coding/the-golden-ticket.png';
 import kernelErrorTrailer from '@/assets/projects/coding/kernel-error-trailer.mp4';
 import chordsDemo from '@/assets/projects/coding/chords-demo.gif';
 import bestNeighborhoodResult from '@/assets/projects/coding/best-neighborhood-result.png';
@@ -7,6 +8,19 @@ import ProjectDisplay from '../../../components/project-display/project-display'
 export function CodingProjects() {
   return (
     <ProjectDisplay title="Coding Projects">
+      <div slot='subsection'>
+        <span slot='title'>The Golden Ticket</span>
+        <img src={theGoldenTicketImg} />
+        <p>
+          The Golden Ticket is a 2D simulator game developed in Unity for a team of 2. It is an adaptation of the <i>Charlie and the Chocolate Factory</i> book by Roald Dahl. The player as Charlie will have to earn money for a chance to get a Golden Ticket from the Chocolate Bars over the course of 2 weeks. During the process, the player makes decisions on what to do each day, grinding through full-time works (minigames) and random events that may help or hinder the player's progress. Even if they get the Golden Ticket, what's the sacrifice they have to make?
+          <br /><br />
+          I am the main Unity developer, interaction designer, and audio engineer of the game. It is still in development.
+          <br /><br />
+          Meanwhile, you can checkout more information on the soundtracks I composed and produced for the game in my <b>Audio Design</b> projects page:
+          <br /><br />
+          <a href="https://finesite.org/projects/audio-design/">Audio Deisgn</a>
+        </p>
+      </div>
       <div slot="subsection">
         <span slot='title'>Kernel Error</span>
         <video controls>

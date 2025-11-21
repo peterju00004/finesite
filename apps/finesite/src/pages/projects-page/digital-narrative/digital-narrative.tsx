@@ -22,6 +22,22 @@ export function DigitalNarrative() {
         </p>
       </div>
       <div slot='subsection'>
+        <span slot='title'>Watercooler</span>
+        <p>
+          Watercooler is a project concept we developed during the 2025 Design Jam at Pitt (<a href='https://dmap.pitt.edu/node/325'>Description of the event</a>).
+          <br /><br />
+          With it being a watercooling prototype, it is designed to be a "third space" for students, faculty, and staff where people can temporarily set aside their social roles and enjoy moments of rest, casual conversation, or quiet relaxation.
+          <br /><br />
+          Rooted in our user survey and the Jam personas, we can see the problems here: ack of dedicated relaxation and socialization spaces on campus, where students, faculty and staff often have to use academic spaces or outdoor environments to take a break.
+          <br /><br />
+          Our design features a Sunlight Zone (where folks can build social connections with others) and a Dark Zone (where it provides individual space) to customize to the needs of different users. Various resources and interactive features will be incorporated within the space. It is a modular design that can be adapted to different layouts of the campus and can be integrated with existing campus facilities. We also designed a set of rules and guidelines to ensure the space remains inclusive, respectful, and welcoming to all users.
+          <br /><br />
+          This project can be found here:
+          <br /><br />
+          <a href="https://docs.google.com/presentation/d/1Jp8e1LHpoigBXw-BHCvIWGaZtXetg6GrgnF7JH1iaIs">Watercooler Presentation Slidedeck</a>
+        </p>
+      </div>
+      <div slot='subsection'>
         <span slot='title'>OneStopMoments</span>
           <p>
             onestopmoments is a digital narrative I made. As a static site, it demonstrates how interactivity can play a part in the narration and the story. Most information reveals only parts of the story as the user chooses their way through the story by clicking on channels. Some information are carefully hidden that requires the user to figure out where they are located, providing additional complementary details.
