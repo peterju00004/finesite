@@ -8,6 +8,7 @@ const routes = [
   'projects/digital-narrative/disco',
   'projects/digital-narrative/armada',
   'projects/digital-narrative/planets',
+  'projects/digital-narrative/planets/artist-statement',
   'projects/audio-design', 
   'projects/other',
   'contact',

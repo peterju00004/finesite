@@ -8,8 +8,10 @@ export function DigitalNarrative() {
       <div slot='subsection'>
         <span slot='title'>Planets that Revolve around the Ruby Moon</span>
         <p>
-          <i>Planets that Revolve around the Ruby Moon</i> is a short story collection of four imaginatary planets. Each planet has its own unique characteristics and its soundtrack (composed and produced by me). This multimedia project combines written narratives with audio elements (as well as a pixel art I drew) to create an immersive and fun experience for readers.
+          <i>Planets that Revolve around the Ruby Moon</i> is a multimedia narrative experience combining collaborative AI-assisted fiction writing, original electronic music composition, and web-based presentation. The project explores the creative possibilities and tensions that emerge when human authorship intersects with machine intelligence in long-form storytelling.
           <br /><br />
+          <Link to="/projects/digital-narrative/planets/artist-statement">Read the artist statement here</Link>
+          <br />
           <Link to="/projects/digital-narrative/planets">Read the full digital narrative here</Link>
         </p>
       </div>

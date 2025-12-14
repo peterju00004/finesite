@@ -10,6 +10,7 @@ import OtherProjects from '../pages/projects-page/other-projects/other-projects'
 import Disco from '../pages/projects-page/digital-narrative/disco/disco';
 import Armada from '../pages/projects-page/digital-narrative/armada/armada';
 import Planets from '../pages/projects-page/digital-narrative/planets/planets';
+import ArtistStatement from '../pages/projects-page/digital-narrative/planets/artist-statement/artist-statement';
 import ContactPage from '../pages/contact-page/contact-page';
 
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
@@ -48,6 +49,7 @@ export function App() {
               <Route path="/projects/digital-narrative/disco" element={<Disco />} />
               <Route path="/projects/digital-narrative/armada" element={<Armada />} />
               <Route path="/projects/digital-narrative/planets" element={<Planets />} />
+              <Route path="/projects/digital-narrative/planets/artist-statement" element={<ArtistStatement />} />
               <Route path="/contact" element={<ContactPage />} />
             </Routes>
           </div>
