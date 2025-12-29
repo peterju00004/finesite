@@ -1,7 +1,11 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+.about-page {
+    .about-description {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.handwriting {
+    font-family: vars.$font-handwriting;
+    font-size: 1.5rem;
+}

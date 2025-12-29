@@ -13,8 +13,15 @@
             text-align: left;
             display: block;
             text-decoration: none;
-            font-family: vars.$font-handwriting;
-            font-size: 1.8rem;
+
+            .handwriting {
+                font-family: vars.$font-handwriting;
+                font-size: 1.5rem;
+            }
+
+            & {
+                margin-top: 0.5rem;
+            }
 
             &:hover {
                 text-decoration: underline;

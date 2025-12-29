@@ -1,0 +1,14 @@
+.side-by-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.left {
+  width: 100%;
+}
+
+.right {
+  width: 100%;
+}
