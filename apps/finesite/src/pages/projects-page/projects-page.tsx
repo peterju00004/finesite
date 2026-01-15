@@ -219,7 +219,7 @@ export function ProjectsPage() {
           <SideBySide left={
             <figure>
               <video controls preload="metadata" playsInline style={{ width: '100%', height: 'auto', objectFit: 'contain' }}>
-                <source src={aedDemo} type="video/mp4" />
+                <source src={aedDemo} type="video/quicktime" />
                 Your browser does not support the video tag.
               </video>
               <figcaption>AED Controller live jam session with self-made drum and bass track.</figcaption>
