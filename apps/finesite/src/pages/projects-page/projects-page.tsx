@@ -9,6 +9,7 @@ import bower from '@/assets/projects/bower/bower.png';
 import aed from '@/assets/projects/aed/aed.png';
 import aedOld from '@/assets/projects/aed/aed-old.png';
 import aedNew from '@/assets/projects/aed/aed-new.png';
+import aedDemo from '@/assets/projects/aed/AED_DEMO.MOV';
 import osm from '@/assets/projects/osm.png';
 import p00 from '@/assets/projects/armada/00.png';
 import p13 from '@/assets/projects/armada/13.png';
@@ -65,7 +66,7 @@ export function ProjectsPage() {
           </Tags>
         </div>
 
-                <div slot='subsection'>
+        <div slot='subsection'>
           <span slot='title'>OneStopMoments</span>
           <p>
             <i>Navigate a frozen Discord-like server to uncover what happened to Nova and his friends: a narrative told through chat logs, widening timestamp gaps, and hidden channels that reveal the tragedy behind a community's slow death.</i>
@@ -215,10 +216,21 @@ export function ProjectsPage() {
           <p>
             <i>When our NeoTrellis button grid failed mid-development, we pivoted to a five-slider design that offered better continuous parameter control: building a $40 MIDI controller to replace $500 commercial equipment.</i>
           </p>
-          <figure>
-            <img src={aed} alt="AED Controller: a MIDI controller built with Arduino" draggable={false} style={{ width: '80%', height: 'auto', objectFit: 'contain' }} />
-            <figcaption>AED Controller: a MIDI controller built with Arduino</figcaption>
-          </figure>
+          <SideBySide left={
+            <figure>
+              <video controls preload="metadata" playsInline style={{ width: '100%', height: 'auto', objectFit: 'contain' }}>
+                <source src={aedDemo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <figcaption>AED Controller live jam session with self-made drum and bass track.</figcaption>
+            </figure>
+          } right={
+            <figure>
+              <img src={aed} alt="AED Controller: a MIDI controller built with Arduino" draggable={false} style={{ width: '80%', height: 'auto', objectFit: 'contain' }} />
+              <figcaption>AED Controller: a MIDI controller built with Arduino</figcaption>
+            </figure>
+          }
+          />
           <br />
           <h4>Project Overview</h4>
           <p>
