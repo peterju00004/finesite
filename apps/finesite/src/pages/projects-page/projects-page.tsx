@@ -9,7 +9,6 @@ import bower from '@/assets/projects/bower/bower.png';
 import aed from '@/assets/projects/aed/aed.png';
 import aedOld from '@/assets/projects/aed/aed-old.png';
 import aedNew from '@/assets/projects/aed/aed-new.png';
-import aedDemo from '@/assets/projects/aed/AED_DEMO.MOV';
 import osm from '@/assets/projects/osm.png';
 import p00 from '@/assets/projects/armada/00.png';
 import p13 from '@/assets/projects/armada/13.png';
@@ -218,18 +217,16 @@ export function ProjectsPage() {
           </p>
           <SideBySide left={
             <figure>
-              <video controls preload="auto" playsInline muted style={{ width: '100%', height: 'auto', objectFit: 'contain' }}>
-                <source src={aedDemo} />
-                Your browser does not support the video tag.
-              </video>
-              <figcaption>AED Controller live jam session with self-made drum and bass track.</figcaption>
+              <iframe width="336" height="189" src="https://www.youtube.com/embed/vxEILhRV9_0?si=iOIKsby0rzK6gQFc" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <figcaption>AED Controller live demonstration with backing tracks made by myself.</figcaption>
             </figure>
-          } right={
-            <figure>
-              <img src={aed} alt="AED Controller: a MIDI controller built with Arduino" draggable={false} style={{ width: '80%', height: 'auto', objectFit: 'contain' }} />
-              <figcaption>AED Controller: a MIDI controller built with Arduino</figcaption>
-            </figure>
-          }
+          } 
+            right={
+              <figure>
+                <img src={aed} alt="AED Controller: a MIDI controller built with Arduino" draggable={false} style={{ width: '80%', height: 'auto', objectFit: 'contain' }} />
+                <figcaption>AED Controller: a MIDI controller built with Arduino</figcaption>
+              </figure>
+            }
           />
           <br />
           <h4>Project Overview</h4>
