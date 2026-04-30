@@ -5,7 +5,7 @@ import infographicImage from './Infographics.png';
 import visualEssay from './VisualEssay.pdf';
 import podcast from './Podcast_mixdown_2.wav';
 import facebook from './facebook.png';
-import instagram from './instagram.png';
+import instagram from './instagram-1.png';
 import linkedin from './linkedin.png';
 import tiktok from './tiktok.png';
 import twitter from './twitter:x.png';
