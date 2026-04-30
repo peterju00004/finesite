@@ -10,6 +10,7 @@ import Armada from '../pages/projects-page/armada/armada';
 import Planets from '../pages/projects-page/planets/planets';
 import ArtistStatement from '../pages/projects-page/planets/artist-statement/artist-statement';
 import ContactPage from '../pages/contact-page/contact-page';
+import HackPage from '../pages/hack-page/hack-page';
 
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
 
@@ -49,6 +50,7 @@ export function App() {
               <Route path="/projects/planets" element={<Planets />} />
               <Route path="/projects/planets/artist-statement" element={<ArtistStatement />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/hack" element={<HackPage />} />
             </Routes>
           </div>
         </div>

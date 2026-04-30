@@ -1,0 +1,504 @@
+// ─── Design Tokens ───────────────────────────────────────────────────────────
+$black: #0a0a0a;
+$navy: #0f1b2d;
+$gold: #f0a500;
+$gold-light: #f5c842;
+$white: #f5f0e8;
+$gray: #8a8a8a;
+$border: rgba(240, 165, 0, 0.2);
+
+$font-display: 'Georgia', 'Times New Roman', serif;
+$font-body: 'Courier New', 'Courier', monospace;
+
+$max-width: 1100px;
+
+// ─── Base ─────────────────────────────────────────────────────────────────────
+.page {
+  background-color: $black;
+  color: $white;
+  font-family: $font-body;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+// ─── Hero ─────────────────────────────────────────────────────────────────────
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 2rem;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(240, 165, 0, 0.08) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(15, 27, 45, 0.9) 0%, transparent 50%);
+    pointer-events: none;
+  }
+}
+
+.heroInner {
+  position: relative;
+  z-index: 1;
+  max-width: $max-width;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.heroEyebrow {
+  font-family: $font-body;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $gold;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+.heroTitle {
+  font-family: $font-display;
+  font-size: clamp(4rem, 10vw, 9rem);
+  font-weight: 400;
+  line-height: 0.95;
+  color: $white;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+
+  // Gold underline accent
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.15em;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background: $gold;
+  }
+}
+
+.heroSubtitle {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(245, 240, 232, 0.7);
+  max-width: 560px;
+  margin-bottom: 2.5rem;
+}
+
+.heroLink {
+  display: inline-block;
+  font-family: $font-body;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $gold;
+  text-decoration: none;
+  border: 1px solid $gold;
+  padding: 0.75rem 1.75rem;
+  transition: background 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    background: $gold;
+    color: $black;
+  }
+}
+
+.heroAccent {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  opacity: 0.08;
+  pointer-events: none;
+
+  span {
+    font-family: $font-display;
+    font-size: clamp(3rem, 6vw, 7rem);
+    font-weight: 400;
+    color: $gold;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: 0.1em;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+// ─── Divider ──────────────────────────────────────────────────────────────────
+.divider {
+  width: 100%;
+  height: 1px;
+  background: $border;
+  margin: 0;
+}
+
+// ─── Sections ─────────────────────────────────────────────────────────────────
+.section {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.sectionLabel {
+  font-family: $font-body;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: $gold;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  font-family: $font-display;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  color: $white;
+  margin-bottom: 1.25rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.sectionDesc {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: rgba(245, 240, 232, 0.65);
+  max-width: 620px;
+  margin-bottom: 3rem;
+}
+
+// ─── About Grid ───────────────────────────────────────────────────────────────
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.aboutText {
+  p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: rgba(245, 240, 232, 0.75);
+    margin-bottom: 1.25rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.aboutStats {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-left: 1px solid $border;
+  padding-left: 3rem;
+
+  @media (max-width: 768px) {
+    border-left: none;
+    border-top: 1px solid $border;
+    padding-left: 0;
+    padding-top: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.statNumber {
+  font-family: $font-display;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  color: $gold;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.statLabel {
+  font-family: $font-body;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(245, 240, 232, 0.5);
+}
+
+// ─── PDF Embed ────────────────────────────────────────────────────────────────
+.pdfWrapper {
+  width: 100%;
+  border: 1px solid $border;
+  background: $navy;
+  overflow: hidden;
+}
+
+.pdfEmbed {
+  width: 100%;
+  height: 700px;
+  border: none;
+  display: block;
+
+  @media (max-width: 768px) {
+    height: 450px;
+  }
+}
+
+.pdfButton {
+  display: inline-block;
+  color: white;
+}
+
+// ─── Figma Card ───────────────────────────────────────────────────────────────
+.figmaWrapper {
+  width: 100%;
+}
+
+.figmaCard {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: $navy;
+  border: 1px solid $border;
+  padding: 2rem 2.5rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+}
+
+.figmaIcon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.figmaText {
+  flex: 1;
+
+  h3 {
+    font-family: $font-display;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $white;
+    margin-bottom: 0.35rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+    color: rgba(245, 240, 232, 0.55);
+    line-height: 1.5;
+  }
+}
+
+.figmaButton {
+  display: inline-block;
+  font-family: $font-body;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $black;
+  background: $gold;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+
+  &:hover {
+    background: $gold-light;
+  }
+}
+
+// ─── Video ────────────────────────────────────────────────────────────────────
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; // 16:9
+  background: $navy;
+  border: 1px solid $border;
+
+  iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+}
+
+// ─── Audio ────────────────────────────────────────────────────────────────────
+.audioWrapper {
+  background: $navy;
+  border: 1px solid $border;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.audioVisual {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.audioIcon {
+  font-size: 2rem;
+}
+
+.audioTitle {
+  font-family: $font-display;
+  font-size: 1.1rem;
+  color: $white;
+  font-style: italic;
+}
+
+.audioPlayer {
+  width: 100%;
+  accent-color: $gold;
+}
+
+// ─── Infographic ──────────────────────────────────────────────────────────────
+.infographicWrapper {
+  border: 1px solid $border;
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.infographic {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+// ─── Visual Essay Grid ────────────────────────────────────────────────────────
+.essayGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.essayFrame {
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border: 1px solid $border;
+  background: $navy;
+}
+
+.essayImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+// ─── Social Grid ──────────────────────────────────────────────────────────────
+.socialCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border: 1px solid $border;
+  overflow: hidden;
+  background: $navy;
+}
+
+.socialImage {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  background: $black;
+}
+
+.socialPlatform {
+  font-family: $font-body;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $gold;
+  opacity: 0.7;
+  padding: 0.5rem 0.75rem;
+}
+
+// ─── CTA ──────────────────────────────────────────────────────────────────────
+.cta {
+  background: $navy;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  padding: 6rem 2rem;
+}
+
+.ctaInner {
+  max-width: $max-width;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-family: $font-display;
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 400;
+  color: $gold;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.ctaText {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(245, 240, 232, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.ctaAddress {
+  font-family: $font-body;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: rgba(245, 240, 232, 0.4);
+  margin-bottom: 2.5rem;
+}
+
+.ctaButton {
+  display: inline-block;
+  font-family: $font-body;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $black;
+  background: $gold;
+  text-decoration: none;
+  padding: 1rem 2.5rem;
+  transition: background 0.2s ease, color 0.2s ease;
+
+  &:hover {
+    background: $gold-light;
+  }
+}

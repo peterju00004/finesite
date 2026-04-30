@@ -12,7 +12,8 @@ const routes = [
   'projects/audio-design', 
   'projects/other',
   'contact',
-  'onestopmoments'
+  'onestopmoments',
+  'hack'
 ];
 
 const distPath = path.join(__dirname, '../dist');
