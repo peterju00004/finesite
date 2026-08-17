@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import styles from './projects-page.module.scss';
 import ProjectDisplay from '../../components/project-display/project-display';
-import Tags from '../../components/tags/tags';
 import planet from "@/assets/projects/planets/moon.png"
 import Button from '../../components/button/button';
 import SideBySide from '../../components/side-by-side/side-by-side';
@@ -56,13 +55,6 @@ export function ProjectsPage() {
             <Button label='Read the full digital narrative here' onClick={() => navigate('/projects/planets')} />
             <Button label='Read the artist statement here' type='secondary' onClick={() => navigate('/projects/planets/artist-statement')} />
           </div>
-          <Tags>
-            <span slot='tag'>#fiction-writing</span>
-            <span slot='tag'>#AI-collaboration</span>
-            <span slot='tag'>#music-production</span>
-            <span slot='tag'>#pixel-art</span>
-            <span slot='tag'>#solo-project</span>
-          </Tags>
         </div>
 
         <div slot='subsection'>
@@ -93,13 +85,6 @@ export function ProjectsPage() {
             <Button label='View in DNID showcase 2025' type='secondary' onClick={() => window.open('https://dmap.pitt.edu/showcase', '_blank')} />
           </div>
           <br />
-          <Tags>
-            <span slot='tag'>#digital-narrative</span>
-            <span slot='tag'>#HTML/CSS</span>
-            <span slot='tag'>#interactive-storytelling</span>
-            <span slot='tag'>#web-design</span>
-            <span slot='tag'>#solo-project</span>
-          </Tags>
         </div>
 
         <div slot='subsection'>
@@ -121,14 +106,6 @@ export function ProjectsPage() {
             <Button label='Read the detailed process documentation here' onClick={() => navigate('/projects/disco')} />
             <Button label='Visit the DISCO webite here' type='secondary' onClick={() => window.open('https://discodesignjam.com/', '_blank')} />
           </div>
-          <Tags>
-            <span slot='tag'>#UX-research</span>
-            <span slot='tag'>#accessibility</span>
-            <span slot='tag'>#co-design</span>
-            <span slot='tag'>#Figma</span>
-            <span slot='tag'>#web-design</span>
-            <span slot='tag'>#collaborative-project</span>
-          </Tags>
         </div>
 
         <div slot='subsection'>
@@ -160,17 +137,10 @@ export function ProjectsPage() {
           <Button label='Read makers report' type='primary' onClick={() => window.open('/Makers Report.pdf', '_blank', 'noopener,noreferrer')} />
           <br /><br />
           <SideBySide left={
-            <iframe width="336" height="189" src="https://www.youtube.com/embed/C5z7W6FCjdY?si=ywD6hvmWZAg0AeaA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="336" height="189" src="https://www.youtube.com/embed/C5z7W6FCjdY?si=ywD6hvmWZAg0AeaA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           } right={
             <iframe src="https://itch.io/embed/4115535" width="342" height="167" frameBorder="0"><a href="https://roymcniev.itch.io/bliss-of-bower">Bliss of Bower by roymcniev</a></iframe>
           } />
-          <Tags>
-            <span slot='tag'>#game-design</span>
-            <span slot='tag'>#narrative-design</span>
-            <span slot='tag'>#music-production</span>
-            <span slot='tag'>#pixel-art</span>
-            <span slot='tag'>#solo-project</span>
-          </Tags>
         </div>
 
         <div slot='subsection'>
@@ -201,13 +171,6 @@ export function ProjectsPage() {
             <Button label='Read detailed process documentation' onClick={() => navigate('/projects/armada')} />
             <Button label='View LLM research report' type='secondary' onClick={() => window.open('/report.pdf', '_blank', 'noopener,noreferrer')} />
           </div>
-          <Tags>
-            <span slot='tag'>#React</span>
-            <span slot='tag'>#TypeScript</span>
-            <span slot='tag'>#UX-design</span>
-            <span slot='tag'>#computer-graphics</span>
-            <span slot='tag'>#internship</span>
-          </Tags>
         </div>
 
         <div slot='subsection'>
@@ -253,12 +216,6 @@ export function ProjectsPage() {
           <br />
           <Button label='Read full project documentation here' onClick={() => window.open('/AED Controller Documentation.pdf', '_blank', 'noopener,noreferrer')} />
           <br />
-          <Tags>
-            <span slot='tag'>#Arduino</span>
-            <span slot='tag'>#hardware</span>
-            <span slot='tag'>#MIDI</span>
-            <span slot='tag'>#collaborative-project</span>
-          </Tags>
         </div>
 
         <div slot='subsection'>
@@ -286,13 +243,6 @@ export function ProjectsPage() {
           <br />
           <Button label='View project on GitHub' onClick={() => window.open('https://github.com/peterju00004/chords', '_blank')} />
           <br />
-          <Tags>
-            <span slot='tag'>#React</span>
-            <span slot='tag'>#WebMIDI</span>
-            <span slot='tag'>#Three.js</span>
-            <span slot='tag'>#music-technology</span>
-            <span slot='tag'>#solo-project</span>
-          </Tags>
         </div>
       </ProjectDisplay>
     </div>

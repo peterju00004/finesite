@@ -10,7 +10,6 @@ import Armada from '../pages/projects-page/armada/armada';
 import Planets from '../pages/projects-page/planets/planets';
 import ArtistStatement from '../pages/projects-page/planets/artist-statement/artist-statement';
 import ContactPage from '../pages/contact-page/contact-page';
-import HackPage from '../pages/hack-page/hack-page';
 
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
 
@@ -28,34 +27,34 @@ export function App() {
   }
   
   return (
-    <div>
-      <div className={styles.app}>
-        <Header />
-        <div style={{ display: 'flex' }}>
-          <Column>
-            <Link slot="item" to="/">home</Link>
-            <Link slot="item" to="/about">about</Link>
-            <Link slot="item" to="/projects">projects</Link>
-            <Link slot="item" to="/gigs">gigs</Link>
-            <Link slot='item' to="/contact">contact</Link>
-          </Column>
-          <div style={{ margin: 'none 1rem', padding: '1rem', width: '80%' }}>
-            <Routes>
-              <Route path="/" element={<HomePage />} />
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/gigs" element={<GigsPage />} />
-              <Route path="/projects" element={<ProjectsPage />} />
-              <Route path="/projects/disco" element={<Disco />} />
-              <Route path="/projects/armada" element={<Armada />} />
-              <Route path="/projects/planets" element={<Planets />} />
-              <Route path="/projects/planets/artist-statement" element={<ArtistStatement />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/hack" element={<HackPage />} />
-            </Routes>
-          </div>
+  <div className={styles.shell}>
+    <div className={styles.app}>
+      <Header />
+      <div className={styles.mainLayout}>
+        <Column>
+          <Link slot="item" to="/">home</Link>
+          <Link slot="item" to="/about">about</Link>
+          <Link slot="item" to="/projects">projects</Link>
+          <Link slot="item" to="/gigs">gigs</Link>
+          <Link slot="item" to="/contact">contact</Link>
+        </Column>
+
+        <div className={styles.mainContent}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/gigs" element={<GigsPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/projects/disco" element={<Disco />} />
+            <Route path="/projects/armada" element={<Armada />} />
+            <Route path="/projects/planets" element={<Planets />} />
+            <Route path="/projects/planets/artist-statement" element={<ArtistStatement />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
         </div>
       </div>
     </div>
+  </div>
   );
 }
 

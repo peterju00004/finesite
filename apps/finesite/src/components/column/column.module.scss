@@ -1,38 +1,58 @@
 .column {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 12rem;
+  width: 12rem;
+  min-width: 0;
+  margin: 0;
+
+  .column-nav {
+    margin-right: 0;
+  }
+
+  .column-list {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 20%;
+    padding: 1rem;
 
-    .column-nav {
-        margin-right: 0;
+    &-no-decoration {
+      text-decoration: none;
+      list-style: none;
+      color: vars.$color-black;
     }
 
-    .column-list {
-        display: flex;
-        flex-direction: column;
-        padding: 1rem;
+    .column-item {
+      margin-left: 0;
+      padding-left: 0;
+      padding-top: 1.5rem;
 
-        &-no-decoration {
-            text-decoration: none;
-            list-style: none;
-            color: vars.$color-black;
-        }
+      &:hover {
+        text-decoration: underline;
+      }
 
-        .column-item {
-            margin-left: 0;
-            padding-left: 0;
-            padding-top: 1.5rem;
-
-            &:hover {
-                text-decoration: underline;
-            }
-
-            .column-link {
-                text-decoration: none;
-                font-weight: bold;
-                color: vars.$color-black;
-            }
-        }
+      .column-link {
+        text-decoration: none;
+        font-weight: bold;
+        color: vars.$color-black;
+      }
     }
+  }
+}
+
+@media (max-width: 700px) {
+  .column {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  .column-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    padding: 0.75rem 0.5rem;
+
+    .column-item {
+      padding-top: 0;
+    }
+  }
 }

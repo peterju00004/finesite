@@ -3,12 +3,17 @@
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   align-items: start;
-}
-
-.left {
   width: 100%;
 }
 
+.left,
 .right {
   width: 100%;
+  min-width: 0;
+}
+
+@media (max-width: 700px) {
+  .side-by-side {
+    grid-template-columns: 1fr;
+  }
 }
